@@ -1,13 +1,27 @@
 import './App.css';
-import {BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom' 
+import {BrowserRouter as Router, Routes, Route, Navigate} from 'react-router-dom';
+import { useAuthContext } from './services/useAuthContext';
+//pages & components
+import Navbar from './components/Navbar';
+import Home from './pages/Home';
+import Foods from './pages/Foods';
+import Reviews from './pages/Reviews'
+import Login from './pages/Login'
+import Signup from './pages/Signup';
+
 
 function App() {
+  const { user } = useAuthContext();
   return (
     <div className="App">
       <Router>
+        <Navbar />
         <Routes>
-          <Route path='/' />
-          <Route path='/login'/>
+          <Route path='/' element={<Home />} />
+          <Route path='/login' element={!user ? <Login /> : <Navigate to='/reviews'/>}/>
+          <Route path='/reviews' element={user ? <Reviews /> : <Navigate to='/login'/>} />
+          <Route path='/signup' element={!user ? <Signup /> : <Navigate to='/' />}/>
+          <Route path='/foods' element={<Foods />} />
           <Route path='/food/:id' />
           <Route path='/:id'/>
           <Route path='/:id/edit' />

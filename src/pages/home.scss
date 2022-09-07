@@ -1,0 +1,43 @@
+
+
+@keyframes rotate {
+  from {
+    transform: rotate(0);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.contain {
+    margin-top:15%;
+	font-size:75px;
+
+    &__film{
+        margin-top:150px;
+        margin-left:-590px;
+        color:black;
+    }
+    &__film-img {
+        margin-top:30px;
+        height:60px;
+        animation: rotate 7s linear infinite;
+    }
+    &__camera-img { 
+        margin-top:-327px;
+        height: 600px;
+    }
+    &__p{
+        font-size:50px;
+        color: rgb(217, 108, 19);
+        margin-top:-307px;
+        margin-left:-602px;
+    }
+    &__p-film{
+        font-size:70px;
+        color:black;
+        margin-top:-125px;
+        margin-left:150px;
+    }
+}
