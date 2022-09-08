@@ -15,6 +15,7 @@
   border:1px solid rgb(41, 39, 178);
   padding:10px;
 }
+
 .editTitle{
   grid-area: 1/1/2/3;
 }

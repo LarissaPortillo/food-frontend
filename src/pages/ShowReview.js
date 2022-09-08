@@ -5,7 +5,7 @@ import { getFood } from '../services/food-api';
 import { useAuthContext } from '../services/useAuthContext';
 import './showreview.css'
 
-const ShowReview=()=>{
+const ShowReview=()=>{ 
     const nav=useNavigate();
     const {id}=useParams();
     const [review,setReview]=useState({});
@@ -32,12 +32,16 @@ const ShowReview=()=>{
     }
 
     return(
-        <body>
-        <div className='showreview'>
-            <h1>{food.name}  </h1>
+        <body className='showreview'>
+        <div className='sreview'>
+            <h1>one of my cravings</h1>
+            <h3>{food.name}</h3>
             <br></br>
-            <h2>{review.love? 'heart ': ''}</h2>
-            <img className='showrpic' src={food.img}></img>
+            {review.love? <i className='fas fa-heart'></i>: ''}
+            {review.tried? <i className='fas fa-utensils'></i>:<i className="fa-utensils-slash"></i>}
+            <br></br>
+            
+            <img className='showpic' src={food.img}></img>
             <br></br>
             Notes: {review.notes}
             <br></br>

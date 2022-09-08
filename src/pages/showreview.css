@@ -1,9 +1,14 @@
 .showreview{
+    background-color: bisque;
+    padding:10vh;
+}
+
+.sreview{
     margin-top: 1%;
     height:80%;
     font-size: medium;
 }
 
-.showrpic{
+.showpic{
     height:30vh;
 }
