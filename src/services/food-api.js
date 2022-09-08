@@ -1,5 +1,5 @@
 import axios from 'axios';
-const baseURL = 'http://localhost:3001/api/food';
+const baseURL = 'https://fifbckend.herokuapp.com/food';
 
 export const getFoods=()=>{
     const URL = baseURL;

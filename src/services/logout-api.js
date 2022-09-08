@@ -1,5 +1,5 @@
 import { useAuthContext } from "./useAuthContext";
-// import { getReviews } from "./review-api"
+
 
 export const useLogout=()=>{
     const { dispatch } = useAuthContext();
@@ -10,7 +10,7 @@ export const useLogout=()=>{
 
         //dispatch logout action
         dispatch({type:'LOGOUT'});
-        // getReviews(null);
+      
     }
     return {logout};
 }

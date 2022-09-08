@@ -9,7 +9,6 @@ const CreateReview=({id,name})=>{
     const createTheReview=()=>{
         const review = {food:id,food_name:name}
         if(!user){
-            console.log('You must be logged in');
             alert('Oh no! Looks like you need to log in!');
         }
         createReview(review,user);
