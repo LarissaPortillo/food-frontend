@@ -26,9 +26,9 @@ const Navbar=()=>{
                         </div>
                     )}
                     {!user && (
-                        <div>
-                            <Link to='/login' className='nav'>Login</Link>
-                            <Link to='/signup' className='nav'>Signup</Link>
+                        <div className='logsign' >
+                            <Link to='/login' className='nav log'>Login</Link>
+                            <Link to='/signup' className='nav sign'>Signup</Link>
                         </div> 
                     )}
                     

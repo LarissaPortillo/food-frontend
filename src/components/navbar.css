@@ -19,7 +19,9 @@ body {
     text-decoration: none;
     font-size: large;
 }
-
+.nav::before{
+    color:aqua;
+}
 .nav:hover{
     color:rgb(217, 108, 19);
 }
@@ -29,8 +31,20 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
 }
+
+.logsign{
+    width:60vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.log{
+    margin-left: 70%;
+}
+
+
 /* width */
 ::-webkit-scrollbar {
     width: 2vh;

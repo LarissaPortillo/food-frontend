@@ -3,21 +3,21 @@ import { createReview } from '../services/review-api';
 import { useAuthContext } from '../services/useAuthContext';
 import './createrev.css'
 
-const CreateReview=({id})=>{
+const CreateReview=({id,name})=>{
     const { user } = useAuthContext();
 
     const createTheReview=()=>{
-        const review = {food:id}
+        const review = {food:id,food_name:name}
         if(!user){
             console.log('You must be logged in');
-            return;
+            alert('Oh no! Looks like you need to log in!');
         }
         createReview(review,user);
-        
+        alert('You added a craving!');
     }
 
     return(
-        <button onClick={createTheReview} className="card-tag card-circle subtle">C</button>
+        <button onClick={createTheReview} className="c-circle subtle" title="Add to myCravings">C</button>
     )
 }
 

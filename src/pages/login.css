@@ -1,10 +1,9 @@
-h1{
-    font-size:medium;
-}
+
 
 .myForm{
     font-size:larger;
-    background-color: #FAF4DF ;
+    background-color: transparent ;
+    border: solid 1px black;
     padding: 15px;
     border-radius: 15px ;
     color: rgb(217, 108, 19);
@@ -30,8 +29,7 @@ input:focus{
     width:10vh;
     border-radius: 15px !important;
     background-color: rgb(217, 108, 19)  !important;
-    border: 0 !important;
-    color:black;
+    border: 1px solid black !important;
 }
 
 .fa-at{
@@ -65,4 +63,8 @@ input:focus{
 
 .fa-user{
     color:#fa8231;
+}
+
+.fa-plus-circle{
+    color:black;
 }

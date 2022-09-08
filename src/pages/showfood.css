@@ -1,0 +1,72 @@
+body{
+    background-color: bisque;
+}
+.showfood{
+    margin-top: 3%;
+    padding:5vh;
+    
+}
+
+.iicontain{
+    text-align: left;
+    margin-top:1%;
+    display:grid;
+    grid-template-rows: 2fr 1fr 2fr 1fr 4fr 1fr;
+    grid-template-columns: 1fr 2fr;
+}
+
+.foodtitle{
+    padding:4vh;
+    border:1px solid black;
+    font-size: xx-large;
+    grid-area: 1/2/2/3;
+}
+.fnam{
+    text-decoration: wavy underline rgba(217, 108, 19);
+}
+
+.filmstudio{
+    padding:4vh;
+    font-size: medium;
+    grid-area: 2/2/3/3;
+    border:1px solid black;
+}
+.pic{
+    grid-area: 1/1/4/2;
+    border:1px solid black;
+}
+.time{
+    padding:4vh;
+    grid-area: 4/1/5/2;
+    border:1px solid black;
+    font-size: medium;
+}
+.intructions{
+    padding:4vh;
+    grid-area:3/2/6/3;
+    border:1px solid black;
+    font-size: medium;
+}
+.ingredients{
+    padding:4vh;
+    grid-area:5/1/6/2;
+    border:1px solid black;
+    font-size: medium;
+}
+
+
+.foodimg{
+    width:80vh
+}
+
+.last{
+    grid-area:6/2/7/3;
+    border:1px solid black;
+    padding:4vh;
+
+}
+.foodlink{
+    float:right;
+    font-size: 5vh;
+    color: rgba(217, 108, 19)
+}

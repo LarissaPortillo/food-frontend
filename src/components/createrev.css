@@ -1,10 +1,6 @@
-.card-tag {
-    float: right;
-    margin: 5px 0 0;
-}
 
-.card-circle {
-    border: 1px solid #aaa;
+.c-circle {
+    border: 1px solid rgb(217, 108, 19);
     border-radius: 50px;
     display: inline-block;
     line-height: 22px;
@@ -12,11 +8,12 @@
     height: 25px;
     text-align: center;
     width: 25px;
-    cursor: pointer
+    cursor: pointer;
+    background-color:transparent
 }
 
 .subtle {
-    color: #aaa;
+    color: rgb(217, 108, 19);
 }
   
 
