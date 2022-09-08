@@ -1,3 +1,5 @@
+//style ref https://codepen.io/Thibaut/pen/ApjaJW
+
 const Difficulty=({val,onChange})=>{
 
     const handleChange=(val)=>{

@@ -10,7 +10,7 @@ export const getFoods=()=>{
 export const getFood=(id)=>{
     const URL = `${baseURL}/${id}`;
     const response = axios.get(URL);
-    return response;
+    return response; 
 }
 
 export const deleteFood=(id)=>{

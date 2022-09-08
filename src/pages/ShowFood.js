@@ -11,8 +11,7 @@ const ShowFood=()=>{
     const[ingredients,setIngredients] = useState([]);
 
     useEffect(()=>{getFood(id).then(res=>{setFood(res.data); setIngredients(res.data.ingredients)})},[]);
-
-    console.log(food.instructions)
+    
     return(
         <body className='showfoodbody'>
         <div className='showfood'>

@@ -43,6 +43,5 @@ export const editReview= async(id,updatedReview,user)=>{
 export const createReview=(review,user)=>{
     const URL = baseURL;
     const response = axios.post(URL, review,{headers:{'Authorization':`Bearer ${user.token}`}});
-    console.log('created review');
     return response;
 }
