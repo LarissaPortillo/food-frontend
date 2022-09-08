@@ -1,6 +1,7 @@
 
 import { createReview } from '../services/review-api';
 import { useAuthContext } from '../services/useAuthContext';
+import './createrev.css'
 
 const CreateReview=({id})=>{
     const { user } = useAuthContext();
@@ -16,7 +17,7 @@ const CreateReview=({id})=>{
     }
 
     return(
-        <button onClick={createTheReview}>Try</button>
+        <button onClick={createTheReview} className="card-tag card-circle subtle">C</button>
     )
 }
 

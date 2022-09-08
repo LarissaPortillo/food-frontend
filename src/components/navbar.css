@@ -6,7 +6,7 @@ body {
     font-family: 'Montserrat Alternates', sans-serif;
 }
 
-.container{
+.navcontainer{
     background-color: black;
     display: flex;
     align-items: center;

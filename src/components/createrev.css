@@ -1,0 +1,22 @@
+.card-tag {
+    float: right;
+    margin: 5px 0 0;
+}
+
+.card-circle {
+    border: 1px solid #aaa;
+    border-radius: 50px;
+    display: inline-block;
+    line-height: 22px;
+    font-size: 12px;
+    height: 25px;
+    text-align: center;
+    width: 25px;
+    cursor: pointer
+}
+
+.subtle {
+    color: #aaa;
+}
+  
+

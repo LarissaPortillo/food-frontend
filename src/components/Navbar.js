@@ -14,7 +14,7 @@ const Navbar=()=>{
     
     return(
         <header>
-            <div className='container'>
+            <div className='navcontainer'>
                 <Link to='/' className='nav homeLink'> home </Link>
                 <Link to='/foods' className='nav foodLink'> filmfood </Link>
                 <nav>

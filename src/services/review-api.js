@@ -15,21 +15,28 @@ export const getReviews= async(user)=>{
 
 }
 
-export const getReview=(id)=>{
+export const getReview= async(id,user)=>{
     const URL = `${baseURL}/${id}`;
-    const response = axios.get(URL);
+    if(user===null)
+    {
+        const res = axios.get(URL);
+        return res;
+    }
+    else{
+         const response = await axios.get(URL,{headers:{'Authorization':`Bearer ${user.token}`}});    
+         return response;
+    }
+}
+
+export const deleteReview=(id,user)=>{
+    const URL = `${baseURL}/${id}`;
+    const response = axios.delete(URL,{headers:{'Authorization':`Bearer ${user.token}`}});
     return response;
 }
 
-export const deleteReview=(id)=>{
+export const editReview= async(id,updatedReview,user)=>{
     const URL = `${baseURL}/${id}`;
-    const response = axios.delete(URL);
-    return response;
-}
-
-export const editReview=(id,updatedReview)=>{
-    const URL = `${baseURL}/${id}`;
-    const response = axios.put(URL,updatedReview);
+    const response = axios.put(URL,updatedReview,{headers:{'Authorization':`Bearer ${user.token}`}});
     return response;
 }
 

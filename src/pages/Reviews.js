@@ -1,13 +1,16 @@
 
 import { useState, useEffect } from 'react';
-import { getReviews } from "../services/review-api";
+import { getReviews, deleteReview } from "../services/review-api";
 import { useAuthContext } from '../services/useAuthContext';
+import { useParams, useNavigate } from 'react-router-dom';
+import Difficulty from '../components/Difficulty';
 
 
 
 const Reviews=()=>{
     const [reviews, setReviews] = useState([]);
     const { user } = useAuthContext();
+
 
     useEffect(()=>{  
         if(user){
@@ -16,19 +19,26 @@ const Reviews=()=>{
             console.log('res',reviews)
         }
     },[setReviews,user]);
-   
-    
+     
+
     return(
         <div>
-            <ul>
+            <table>
+                <tr> 
+                    <th>Food</th>
+                    <th>Heart</th>
+                    <th>Tried</th>
+                    <th>Rating</th>
+                    <th>Difficulty</th>
+                </tr>
                 {reviews&& reviews.map((review)=>{
                     return(
                         <li>
-                            <a href={`/review/${review._id}`}>{review.food}</a> 
+                            <a href={`/reviews/${review._id}`}>{review.food}</a>
                         </li>
                     )
                 })}
-            </ul>
+            </table>
         </div>
     );
 }

@@ -1,0 +1,68 @@
+h1{
+    font-size:medium;
+}
+
+.myForm{
+    font-size:larger;
+    background-color: #FAF4DF ;
+    padding: 15px;
+    border-radius: 15px ;
+    color: rgb(217, 108, 19);
+}
+
+input{
+    border-radius:0 15px 15px 0 !important;
+}
+
+input:focus{
+    outline: none;
+    box-shadow:none !important;
+    border:1px solid black !important;
+}
+
+.br-15{
+    border-radius: 15px 0 0 15px !important;
+}
+
+    
+.submit_btn{
+    font-size:small;
+    width:10vh;
+    border-radius: 15px !important;
+    background-color: rgb(217, 108, 19)  !important;
+    border: 0 !important;
+    color:black;
+}
+
+.fa-at{
+    color:rgb(217, 108, 19);
+}
+
+.fa-lock{
+    color:rgb(217, 108, 19);
+}
+
+.input-group-text{
+    background-color:black;
+}
+
+.fa-arrow-alt-circle-right{
+    color:black;
+}
+
+.card-footer{
+    background-color: black;
+}
+
+.card-header{
+    background-color: black;
+}
+
+.error{
+    color:#fa8231;
+    font-size: medium;
+}
+
+.fa-user{
+    color:#fa8231;
+}

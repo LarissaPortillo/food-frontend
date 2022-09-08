@@ -8,7 +8,9 @@ import Foods from './pages/Foods';
 import Reviews from './pages/Reviews'
 import Login from './pages/Login'
 import Signup from './pages/Signup';
-
+import ShowReview from './pages/ShowReview'
+import EditReview from './components/EditReview';
+import ShowFood from './pages/ShowFood';
 
 function App() {
   const { user } = useAuthContext();
@@ -22,9 +24,9 @@ function App() {
           <Route path='/reviews' element={user ? <Reviews /> : <Navigate to='/login'/>} />
           <Route path='/signup' element={!user ? <Signup /> : <Navigate to='/' />}/>
           <Route path='/foods' element={<Foods />} />
-          <Route path='/food/:id' />
-          <Route path='/:id'/>
-          <Route path='/:id/edit' />
+          <Route path='/reviews/:id' element={<ShowReview />} />
+          <Route path='/foods/:id' element={<ShowFood />} />
+          <Route path='/:id/edit' element={<EditReview />} />
         </Routes>
       </Router>
     </div>
