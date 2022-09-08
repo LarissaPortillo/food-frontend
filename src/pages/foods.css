@@ -1,5 +1,6 @@
-body{
- padding-bottom: 10vh;;
+.showfoodsbody{
+ padding-bottom: 10vh;
+ background-color: bisque;
 }
 
 .foods{

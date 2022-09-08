@@ -1,3 +1,8 @@
+  .reviewsbody{
+    background-color: bisque;
+    padding-top:1vh;
+    padding-bottom:10vh;
+  }
   .craves{
     font-size: x-large;
     font-weight: 300;
@@ -5,7 +10,7 @@
 
   h1{
     font-size: 30px;
-    color: #fff;
+    color: black;
     text-transform: uppercase;
     font-weight: 300;
     text-align: center;

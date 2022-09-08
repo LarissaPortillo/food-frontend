@@ -14,6 +14,7 @@ const ShowFood=()=>{
 
     console.log(food.instructions)
     return(
+        <body className='showfoodbody'>
         <div className='showfood'>
 
             <div className='iicontain'>
@@ -39,7 +40,7 @@ const ShowFood=()=>{
             <div className='last'>  <Link class='foodlink' to='/foods'>→</Link> </div>
         </div>
         </div>
-        
+        </body>
     );
 }
 

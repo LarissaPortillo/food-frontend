@@ -3,7 +3,7 @@ import { useState,  useEffect } from 'react';
 import { useParams, useNavigate, Link } from 'react-router-dom';
 import { getFood } from '../services/food-api';
 import { useAuthContext } from '../services/useAuthContext';
-
+import './showreview.css'
 
 const ShowReview=()=>{
     const nav=useNavigate();
@@ -24,7 +24,7 @@ const ShowReview=()=>{
         })
     }
 
-    useEffect(getTheReview,[user,setReview]);
+    useEffect(getTheReview,[user,setReview,review]);
 
     const deleteTheReview=()=>{
         deleteReview(id,user);
@@ -32,17 +32,25 @@ const ShowReview=()=>{
     }
 
     return(
-        <div>
+        <body>
+        <div className='showreview'>
             <h1>{food.name}  </h1>
+            <br></br>
+            <h2>{review.love? 'heart ': ''}</h2>
+            <img className='showrpic' src={food.img}></img>
+            <br></br>
             Notes: {review.notes}
             <br></br>
             Rating:{review.rating}
             <br></br>
             Difficulty level:{review.level}
+            <br></br>
             <button onClick={()=>{nav(`/${id}/edit`)}}>Edit</button>
             <button onClick={deleteTheReview}>Delete</button>
+            <br></br>
             <Link to='/reviews'>Back to Cravings</Link>
         </div>
+        </body>
     )
 
 }

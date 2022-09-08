@@ -29,6 +29,7 @@ const Reviews=()=>{
 
     
     return(
+        <body className='reviewsbody'>
         <div className='reviews'>
            
         <section>
@@ -76,6 +77,7 @@ const Reviews=()=>{
         </section>
 
         </div>
+        </body>
     );
 }
 

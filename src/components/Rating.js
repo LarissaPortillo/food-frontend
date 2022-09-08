@@ -8,7 +8,6 @@ const Rating=({c,val,inactiveColor='#ddd',size=24, activeColor='yellow', onChang
 
     return(
         <div>
-            <h3>Rating:</h3>
             {stars.map((s,i)=>{
                 let style=inactiveColor;
                 if(i < val){

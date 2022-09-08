@@ -11,10 +11,12 @@ const Foods=()=>{
     useEffect(()=>{getFoods().then(res=>setFoods(res.data))},[]);
 
     return(
+    <body className='showfoodsbody'>
         <div className='foods'>
    
                 {foods.map((food)=>{
                     return(
+                        
                             <div className="c-container">
                               
                                     <div className="c-body">
@@ -37,6 +39,7 @@ const Foods=()=>{
                 }
           
         </div>
+        </body>
     );
 }
 

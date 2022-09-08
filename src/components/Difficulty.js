@@ -6,7 +6,6 @@ const Difficulty=({val,onChange})=>{
 
     return(
         <div class="dif">
-            <h3>Level of Difficulty:</h3>
             <input type="radio" class="radio" name="progress" value={25} id="twentyfive"  checked={val===25} onClick={()=>handleChange(25)} />
             <label for="twentyfive" class="label">easy</label>
 
