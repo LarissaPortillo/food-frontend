@@ -1,70 +1,77 @@
-# Getting Started with Create React App
+# Food in Film / Mod 3 Project Frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is my Mod3 project for the PerScholas Software Engineering course.
 
-## Available Scripts
+Click [here][1] for the live site link to my project.
+Click [here][3] to view the back end of the project.
 
-In the project directory, you can run:
+## Project Description
+***
+For the Per Scholas Module 3 Project, we are tasked with creating a working full-stack application using the MERN stack with at least one model with full CRUD. I love watching videos where individuals try foods seen in animated movies. So, I decided to create an app where users could see how to make the delicious animated foods and write down their thoughts and opinions on it. 
 
-### `npm start`
+![Page home page](./Screenshot%202022-09-08%20225738.jpg)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Approach Taken
+I wanted to try to achieve a simple look to the website and try to make the site look sleek and simple but also a bit interactive. I implemented the new and edit in the front-end. I wanted to implement authorization and authentication to give the user a more customized expereince so I created a user model and looked for outside resources to accomplish this task. Specifically [this][2] youtube video was helpful in understanding the logic behind authentication and authorization within a mern stack app.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Unsolved Problems
+***
+There are some parts where the user has to manually refresh the page in order to see some updates. So, I will do more research on navigate and see how to solve this issue. Also, if a user reloads the edit page before submitting, the placeholder values will disappear. So, I will look into this issue as well. 
 
-### `npm test`
+## User Stories
+***
+* User is able to view the index of all the recipes
+* User is able to log in
+* User is able to log out
+* User is able to create a review
+* User is able to edit a review
+* User is able to delete a review
+* User is able to view their review
+* User is able to click on a recipe or review and view the single entity in greater detail
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Technologies Used
+***
+* Javascript
+* NodeJS
+* React
 
-### `npm run build`
+### NPM Packages Installed
+* nodemon
+* axios
+* react
+* bootstrap
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Installation
+***
+Fork and clone the repository
+```
+$ git clone https://github.com/yourusername/repositoryname
+```
+Go to the project directory
+```
+$ cd repositoryname
+```
+Install dependencies
+```
+$ npm i
+```
+Run nodemon and open local host in browser to see the project
+```
+$ npm start
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Future Plans
+***
+I wanted to include some more features in this front-end.
 
-### `npm run eject`
+#### Search
+* I would like to add a search and filter feature to the the foods and reviews pages. 
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+#### Public rating 
+* Add public rating and comment feauture on each recipe so the users can interact and see others perspectives on the recipes. 
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+[1]:https://foodinfilm.herokuapp.com/ "live site"
+[2]:https://www.youtube.com/watch?v=WsRBmwNkv3Q&list=PL4cUxeGkcC9g8OhpOZxNdhXggFz2lOuCT "youtube link"
+[3]:https://github.com/LarissaPortillo/food-backend "back end"
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
