@@ -1,5 +1,5 @@
 import axios from 'axios';
-const baseURL = 'https://fifbckend.herokuapp.com/food';
+const baseURL = 'https://fifbckend.onrender.com/food';
 
 export const getFoods=()=>{
     const URL = baseURL;

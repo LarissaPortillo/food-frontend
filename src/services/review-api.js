@@ -1,5 +1,5 @@
 import axios from 'axios';
-const baseURL = 'https://fifbckend.herokuapp.com/api/review';
+const baseURL = 'https://fifbckend.onrender.com/api/review';
 
 export const getReviews= async(user)=>{
     const URL = baseURL;

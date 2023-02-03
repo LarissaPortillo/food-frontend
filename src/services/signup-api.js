@@ -10,7 +10,7 @@ export const useSignup=()=>{
         setIsLoading(true);
         setError(null);
         
-        const response = await fetch('https://fifbckend.herokuapp.com/api/user/signup', {
+        const response = await fetch('https://fifbckend.onrender.com/api/user/signup', {
             method:'POST',
             headers:{'Content-Type': 'application/json'},
             body: JSON.stringify({name, username, password})
